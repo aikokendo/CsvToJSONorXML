@@ -26,6 +26,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="parser" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aiko\Downloads\demo1\ale2" />
       <recent name="C:\Users\aiko\Downloads\demo1\ale2\src" />
@@ -50,7 +53,7 @@
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app" />
       <module name="ale2" />
-      <option name="PROGRAM_PARAMETERS" value="test.csv INSERT" />
+      <option name="PROGRAM_PARAMETERS" value="test.csv pipe" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
