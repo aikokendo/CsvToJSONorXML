@@ -45,3 +45,11 @@ INSERT INTO test (id,name,city) VALUES (1,ale,reston);
 INSERT INTO test (id,name,city) VALUES (2,nakano,reston);
 INSERT INTO test (id,name,city) VALUES (3,john,fairfax);
 ```
+
+** app _test.csv_ _PIPE_**
+```
+id|name|city
+1|ale|reston
+2|nakano|reston
+3|john|fairfax
+```
