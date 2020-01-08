@@ -1,8 +1,8 @@
 # CsvToJSONorXML
-Simple java program that receives a CSV file and converts it to JSON or XML
+Simple java program that receives a CSV file and converts it to JSON, XML, Insert statements
 
 ## Execution
-Program expects two parameters: CSV file address (test.csv) and either "JSON" or "XML". 
+Program expects two parameters: CSV file address (test.csv) and either "JSON", "XML" or "INSERT". 
 A sample test file has been provided "test.csv" 
 
 
@@ -37,4 +37,11 @@ A sample test file has been provided "test.csv"
 	</array>
 </result>
 
+```
+
+**app _test.csv_ _INSERT_**
+```
+INSERT INTO test (id,name,city) VALUES (1,ale,reston);
+INSERT INTO test (id,name,city) VALUES (2,nakano,reston);
+INSERT INTO test (id,name,city) VALUES (3,john,fairfax);
 ```
