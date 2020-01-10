@@ -1,4 +1,4 @@
-package parser;
+package parser.service;
 
 import org.springframework.stereotype.Component;
 
