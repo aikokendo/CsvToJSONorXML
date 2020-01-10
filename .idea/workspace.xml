@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/StrategyFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/StrategyFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserINSERT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserPIPE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/StrategyFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/StrategyFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserINSERT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserINSERT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserJSON.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserPIPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserPIPE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserXML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
