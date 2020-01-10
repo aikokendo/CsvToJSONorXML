@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="" />
+    <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/StrategyFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/StrategyFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserINSERT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserPIPE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/StrategyFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/StrategyFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserINSERT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserINSERT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserJSON.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserPIPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserPIPE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserXML.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +40,11 @@
   <component name="ProjectId" id="1W5NZG4dJZ2F3jyHG2zazYY7ATm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -53,7 +74,7 @@
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app" />
       <module name="ale2" />
-      <option name="PROGRAM_PARAMETERS" value="test.csv pipe" />
+      <option name="PROGRAM_PARAMETERS" value="xxx PIPE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,7 +103,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

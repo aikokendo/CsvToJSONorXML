@@ -19,7 +19,7 @@ public class StrategyFinder {
 
     }
 
-    public String parseFromCsvFile(String csvFileName){
-        return myParser.parseFromCsvFile(csvFileName);
+    public String parseFromCsv(String csvContent){
+        return myParser.parseFromCsv(csvContent);
     }
 }

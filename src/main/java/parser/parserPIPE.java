@@ -1,32 +1,23 @@
 package parser;
 
-import com.opencsv.CSVReader;
-
-import java.io.FileReader;
-import java.io.IOException;
 
 public class parserPIPE implements Parser {
 
     @Override
-    public String parseFromCsvFile(String csvFileName) {
-        CSVReader reader = null;
+    public String parseFromCsv(String csvContent) {
+        String[] csvFileLines = csvContent.split("\n");
         String output = "";
-
-        try {
-            reader = new CSVReader(new FileReader(csvFileName));  //CSVReader manages default comma separated values behaviours.
-            String[] line;
-
-            while ((line = reader.readNext()) != null) {
-                String result = "";
-                for (int i = 0; i < line.length; i++) {
-                    result += line[i] + "|";  //add all values
-                }
-                result = result.substring(0, result.length() - 1); //delete last pipe
-                output += result + "\n";
+        String[] curRow = null;
+        String curPipe = "";
+        for (int i = 0; i<csvFileLines.length; i++){
+            curRow = csvFileLines[i].split(",");
+            curPipe = "";
+            for (int j = 0; j < curRow.length; j++){
+                curPipe += curRow[j] + "|";
             }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
+            curPipe = curPipe.substring(0, curPipe.length() - 1) ; //delete last Pipe
+
+            output += curPipe  + "\n";
         }
         return output;
     }

@@ -10,14 +10,7 @@ import java.util.stream.Collectors;
 
 public class parserJSON implements Parser {
     @Override
-    public String parseFromCsvFile(String csvFileName) {
-        String contents = "";
-        try {
-            contents = Files.lines(Paths.get(csvFileName)).collect(Collectors.joining("\n"));
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-        return CDL.toJSONArray(contents).toString();
+    public String parseFromCsv(String csvContent) {
+        return CDL.toJSONArray(csvContent).toString();
     }
 }

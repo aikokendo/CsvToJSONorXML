@@ -1,39 +1,31 @@
 package parser;
 
-import com.opencsv.CSVReader;
-
-import java.io.FileReader;
-import java.io.IOException;
 
 public class parserINSERT implements Parser {
 
     @Override
-    public String parseFromCsvFile(String csvFileName) {
-        String csvJustName = csvFileName.split("\\.")[0];
-        CSVReader reader = null;
+    public String parseFromCsv(String csvContent) {
+        String[] csvFileLines = csvContent.split("\n");
         String output = "";
-
-        try {
-            reader = new CSVReader(new FileReader(csvFileName));  //CSVReader manages default comma separated values behaviours.
-            String[] headers = reader.readNext(); //headers
-            String[] line;
-
-            while ((line = reader.readNext()) != null) {
-                String result = "INSERT INTO " + csvJustName + " (";
-                for (int i = 0; i < headers.length; i++) {
-                    result += headers[i] + ",";
-                }
-                result = result.substring(0, result.length() - 1) + ") VALUES ("; //delete last comma
-
-                for (int i = 0; i < line.length; i++) {
-                    result += line[i] + ",";  //add all values
-                }
-                result = result.substring(0, result.length() - 1) + ");"; //delete last comma
-                output += result + "\n";
-            }
+        String[] headers = null;
+        String[] curRow = null;
+        String curInsert = "";
+        if (csvFileLines.length > 1){  //there is at least 1 row available
+            headers = csvFileLines[0].split(",");
         }
-        catch (IOException e) {
-            e.printStackTrace();
+        for (int i = 1; i<csvFileLines.length; i++){
+            curRow = csvFileLines[i].split(",");
+            curInsert = "INSERT INTO TABLE (";
+            for (int j = 0; j < headers.length; j++){
+                curInsert += headers[j] + ",";
+            }
+            curInsert = curInsert.substring(0, curInsert.length() - 1) + ") VALUES ("; //delete last comma
+
+            for (int j = 0; j < curRow.length; j++){
+                curInsert += curRow[j] + ",";
+            }
+            curInsert = curInsert.substring(0, curInsert.length() - 1) + ");"; //delete last comma
+            output += curInsert  + "\n";
         }
         return output;
     }
