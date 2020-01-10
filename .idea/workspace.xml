@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/service/StrategyFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/errorHandling/badRequestException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/service/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/StrategyFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/controller/parserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/service/parserINSERT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/service/parserJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/service/parserPIPE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/service/parserXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/StrategyFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserINSERT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserJSON.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserPIPE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/parserXML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/controller/parserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/controller/parserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/controller/parserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/controller/parserController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,8 +29,8 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
