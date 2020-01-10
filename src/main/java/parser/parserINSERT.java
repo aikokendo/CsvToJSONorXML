@@ -1,6 +1,8 @@
 package parser;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class parserINSERT implements Parser {
 
     @Override

@@ -7,7 +7,7 @@ A sample test file has been provided "test.csv"
 
 
 ## Sample Response
-**app _test.csv_ _JSON_**
+**parser.app _test.csv_ _JSON_**
 
 ```
 [{"name":"ale","city":"reston","id":"1"},
@@ -16,7 +16,7 @@ A sample test file has been provided "test.csv"
 
 ```
 
-**app _test.csv_ _XML_**
+**parser.app _test.csv_ _XML_**
 
 ```
 <result>
@@ -39,7 +39,7 @@ A sample test file has been provided "test.csv"
 
 ```
 
-**app _test.csv_ _INSERT_**
+**parser.app _test.csv_ _INSERT_**
 ```
 INSERT INTO test (id,name,city) VALUES (1,ale,reston);
 INSERT INTO test (id,name,city) VALUES (2,nakano,reston);
@@ -47,7 +47,7 @@ INSERT INTO test (id,name,city) VALUES (3,john,fairfax);
 
 ```
 
-** app _test.csv_ _PIPE_ **
+** parser.app _test.csv_ _PIPE_ **
 
 ```
 id|name|city

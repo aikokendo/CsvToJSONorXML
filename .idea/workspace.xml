@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/app.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/StrategyFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/StrategyFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserINSERT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserJSON.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserPIPE.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/parserXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/parserXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/parser/StrategyFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/StrategyFinder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/parser/parserINSERT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserINSERT.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/parser/parserJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/parserJSON.class" afterDir="false" />
@@ -72,7 +70,7 @@
   </component>
   <component name="RunManager">
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app" />
+      <option name="MAIN_CLASS_NAME" value="parser.app" />
       <module name="ale2" />
       <option name="PROGRAM_PARAMETERS" value="xxx PIPE" />
       <method v="2">
