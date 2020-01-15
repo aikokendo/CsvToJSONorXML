@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/errorHandling/badRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aleUsers/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aleUsers/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/controller/parserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/controller/parserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parser/controller/parserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/controller/parserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/app.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/controller/parserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/controller/parserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/errorHandling/badRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/errorHandling/badRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/service/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/service/StrategyFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/StrategyFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/service/parserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserINSERT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/service/parserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/service/parserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserPIPE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/service/parserXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/app.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/controller/parserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/errorHandling/badRequestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/service/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/service/StrategyFinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/service/parserINSERT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/service/parserJSON.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/service/parserPIPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/service/parserXML.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +83,7 @@
   </component>
   <component name="RunManager">
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parser.app" />
+      <option name="MAIN_CLASS_NAME" value="aleUsers.app" />
       <module name="ale2" />
       <option name="PROGRAM_PARAMETERS" value="xxx PIPE" />
       <method v="2">
