@@ -21,15 +21,15 @@ in case of needing a more complex container with docker-compose, please refer to
 ### USER
 {"firstName":"Ale","lastName":"Meraz"}
 
-+ **POST** localhost:8080/users/add  - Returns the ID of the newly created user
-+ **GET**  localhost:8080/users/{id} - Returns User information for the id provided. Accepts the Header "Accept=application/json" and "Accept=application/xml"
-+ **GET**  localhost:8080/users      - Returns all Users information. Accepts the Header "Accept=application/json" and "Accept=application/xml"
-+ **GET**  localhost:8080/users/parse/{id}?type={type} - Returns User information for the id provided. Accepts the types: JSON, XML, INSERT, PIPE
-+ **GET**  localhost:8080/users/parse?type={type}      - Returns all Users information. Accepts the types: JSON, XML, INSERT, PIPE
++ **POST** `localhost:8080/users/add`  - Returns the ID of the newly created user
++ **GET**  `localhost:8080/users/{id}` - Returns User information for the id provided. Accepts the Header "Accept=application/json" and "Accept=application/xml"
++ **GET**  `localhost:8080/users`      - Returns all Users information. Accepts the Header "Accept=application/json" and "Accept=application/xml"
++ **GET**  `localhost:8080/users/parse/{id}?type={type}` - Returns User information for the id provided. Accepts the types: JSON, XML, INSERT, PIPE
++ **GET**  `localhost:8080/users/parse?type={type}`      - Returns all Users information. Accepts the types: JSON, XML, INSERT, PIPE
 
 
-##PARSER
-+ **GET** localhost:8080/parser?type={type}   - returns the CSV provided in the body parsed into type.  Accepts the types: JSON, XML, INSERT, PIPE
+## PARSER
++ **GET** `localhost:8080/parser?type={type}`   - returns the CSV provided in the body parsed into type.  Accepts the types: JSON, XML, INSERT, PIPE
 
 Example:
 
