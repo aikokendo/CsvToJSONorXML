@@ -21,7 +21,7 @@ in case of needing a more complex container with docker-compose, please refer to
 ### USER
 {"firstName":"Ale","lastName":"Meraz"}
 
-+ **POST** `localhost:8080/users/add`  - Returns the ID of the newly created user
++ **POST** `localhost:8080/users`  - Returns the ID of the newly created user
 + **GET**  `localhost:8080/users/{id}` - Returns User information for the id provided. Accepts the Header "Accept=application/json" and "Accept=application/xml"
 + **GET**  `localhost:8080/users`      - Returns all Users information. Accepts the Header "Accept=application/json" and "Accept=application/xml"
 + **GET**  `localhost:8080/users/parse/{id}?type={type}` - Returns User information for the id provided. Accepts the types: JSON, XML, INSERT, PIPE
