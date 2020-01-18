@@ -22,14 +22,14 @@ public class UserController {
     @Autowired
     private StrategyFinder myStrategy;
 
-    @PostMapping(path="/add")
+    @PostMapping
     @ResponseBody
     public String addNewUser(@Valid @RequestBody User user, BindingResult myBR) throws Exception{
         if (!myBR.hasErrors()) {
             return userService.createUser(user);
         }
         else{
-            throw new badRequestException();
+            throw new badRequestException("User provided is not correctly defined.");
         }
     }
 
@@ -45,7 +45,7 @@ public class UserController {
     public String getParsedUser(@PathVariable("id") int id, @RequestParam(required = false) Map<String,String> query){
         if (!query.containsKey("type")){
             //            return "text error error";
-            throw new badRequestException();
+            throw new badRequestException("A type must be provided");
         }
         else{
             return myStrategy.parseFromCsv(userService.getCSVUser(id), query.get("type"));
@@ -63,7 +63,7 @@ public class UserController {
     public String getParsedUsers(@RequestParam(required = false) Map<String,String> query){
         if (!query.containsKey("type")){
             //            return "text error error";
-            throw new badRequestException();
+            throw new badRequestException("A type must be provided.");
         }
         else{
             return myStrategy.parseFromCsv(userService.getCSVUsers(), query.get("type"));

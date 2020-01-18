@@ -17,7 +17,7 @@ public class parserController {
     public String getParser(@RequestParam(required = false) Map<String,String> query, @RequestBody(required = false) String csvText) throws Exception {
         if (csvText == null || !query.containsKey("type")){
 //            return "text error error";
-            throw new badRequestException();
+            throw new badRequestException("A type must be provided.");
         }
         else{
             return myStrategy.parseFromCsv(csvText, query.get("type"));
