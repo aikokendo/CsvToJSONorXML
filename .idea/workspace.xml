@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/aleUsers/configuration/appConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aleUsers/consumer/RabbitReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/QueueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/controller/parserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/controller/ParserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/errorHandling/badRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/errorHandling/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/StrategyFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/StrategyFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserINSERT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserPIPE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/parserXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserXML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/app.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/controller/parserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/controller/parserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/errorHandling/badRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/errorHandling/badRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/StrategyFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/StrategyFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserINSERT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserINSERT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserJSON.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserPIPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserPIPE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserXML.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
