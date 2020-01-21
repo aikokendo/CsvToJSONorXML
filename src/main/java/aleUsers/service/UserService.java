@@ -3,6 +3,7 @@ package aleUsers.service;
 import aleUsers.model.User;
 import aleUsers.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
@@ -15,6 +16,14 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private QueueService queueService;
+
+
+    @Value("${primaryQueue.name}")
+    private String primaryQueueName;
+
+
     @Cacheable(cacheNames = "user")
     public Optional<User> getUser(int id){
         System.out.println("user is not cached: "+ id);
@@ -26,14 +35,12 @@ public class UserService {
 
     @CacheEvict(cacheNames = {"user","users","userCSV","usersCSV"}, allEntries = true)
     public String createUser(User user){
-        user = userRepository.save(user);
-        return "User created with id:" + user.getId()+ ".";
+        queueService.addToQueue(primaryQueueName, user);;
+        return "Success";
     }
 
     @Cacheable(cacheNames = "users")
     public Iterable<User> getAllUsers(){
-
-        System.out.println("users are not cached: ");
         return userRepository.findAll();
     }
 

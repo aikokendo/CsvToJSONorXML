@@ -8,13 +8,13 @@ public class StrategyFinder {
     private Parser myParser;
 
     @Autowired
-    private parserJSON myParserJSON;
+    private ParserJSON myParserJSON;
     @Autowired
-    private parserXML myParserXML;
+    private ParserXML myParserXML;
     @Autowired
-    private parserINSERT myParserINSERT;
+    private ParserINSERT myParserINSERT;
     @Autowired
-    private parserPIPE myParserPIPE;
+    private ParserPIPE myParserPIPE;
 
     public String parseFromCsv(String csvText, String output){
         if (output.equals("JSON")){

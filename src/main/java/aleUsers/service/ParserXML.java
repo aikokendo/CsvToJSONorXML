@@ -1,14 +1,14 @@
 package aleUsers.service;
 
-
 import org.json.CDL;
+import org.json.XML;
 import org.springframework.stereotype.Component;
 
 
 @Component
-public class parserJSON implements Parser {
+public class ParserXML implements Parser {
     @Override
     public String parseFromCsv(String csvContent) {
-        return CDL.toJSONArray(csvContent).toString();
+        return "<root>" + XML.toString(CDL.toJSONArray(csvContent)) + "</root>";
     }
 }

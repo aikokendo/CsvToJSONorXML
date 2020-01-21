@@ -3,7 +3,7 @@ package aleUsers.service;
 import org.springframework.stereotype.Component;
 
 @Component
-public class parserPIPE implements Parser {
+public class ParserPIPE implements Parser {
 
     @Override
     public String parseFromCsv(String csvContent) {

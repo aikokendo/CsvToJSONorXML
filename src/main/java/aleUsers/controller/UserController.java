@@ -1,6 +1,6 @@
 package aleUsers.controller;
 
-import aleUsers.errorHandling.badRequestException;
+import aleUsers.errorHandling.BadRequestException;
 import aleUsers.model.User;
 import aleUsers.service.StrategyFinder;
 import aleUsers.service.UserService;
@@ -29,7 +29,7 @@ public class UserController {
             return userService.createUser(user);
         }
         else{
-            throw new badRequestException("User provided is not correctly defined.");
+            throw new BadRequestException("User provided is not correctly defined.");
         }
     }
 
@@ -45,7 +45,7 @@ public class UserController {
     public String getParsedUser(@PathVariable("id") int id, @RequestParam(required = false) Map<String,String> query){
         if (!query.containsKey("type")){
             //            return "text error error";
-            throw new badRequestException("A type must be provided");
+            throw new BadRequestException("A type must be provided");
         }
         else{
             return myStrategy.parseFromCsv(userService.getCSVUser(id), query.get("type"));
@@ -63,7 +63,7 @@ public class UserController {
     public String getParsedUsers(@RequestParam(required = false) Map<String,String> query){
         if (!query.containsKey("type")){
             //            return "text error error";
-            throw new badRequestException("A type must be provided.");
+            throw new BadRequestException("A type must be provided.");
         }
         else{
             return myStrategy.parseFromCsv(userService.getCSVUsers(), query.get("type"));
