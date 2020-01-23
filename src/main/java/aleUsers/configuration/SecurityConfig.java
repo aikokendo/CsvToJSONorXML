@@ -15,6 +15,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         //we need an encoder for spring security 5
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-        auth.inMemoryAuthentication().withUser("admin").password(encoder.encode("admin")).roles("USER","ADMIN");
+        auth.inMemoryAuthentication()
+                .withUser("admin").password(encoder.encode("admin")).roles("USER", "ADMIN")
+                .and().withUser("simpleUser").password(encoder.encode("pass")).roles("USER")
+                .and().withUser("nakis").password(encoder.encode("fer")).roles("ADMIN");
+
+
     }
+
 }
