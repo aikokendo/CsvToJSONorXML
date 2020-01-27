@@ -5,6 +5,7 @@ import aleUsers.model.User;
 import aleUsers.service.StrategyFinder;
 import aleUsers.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +26,7 @@ public class UserController {
 
     @PostMapping
     @ResponseBody
+    @PreAuthorize("hasRole('ADMIN_ROLE')")  //verify user has admin role to run this
     public String addNewUser(@Valid @RequestBody User user, BindingResult myBR) throws Exception{
         if (!myBR.hasErrors()) {
             return userService.createUser(user);

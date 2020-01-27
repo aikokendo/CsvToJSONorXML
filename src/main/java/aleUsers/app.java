@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 
 @SpringBootApplication
 @EnableCaching
-@EnableResourceServer
+@EnableResourceServer  //enable the resource server
 public class app {
     public static void main(String[] args){
         SpringApplication.run(app.class, args);
