@@ -18,8 +18,19 @@ in case of needing a more complex container with docker-compose, please refer to
 
 
 ## Endpoints
+### OUATH2 Token
++ **POST** localhost:8080/oauth/token with oauth authorization for the client (in this case hardcoded gateway/secret) and body parameters username, password and grant_type (for testing: admin, admin1, password respectively)
+
 ### USER
+
 {"firstName":"Ale","lastName":"Meraz"}
+
+The token generated must be used as a header parameter for all the following endpoints.
+
+```
+--header 'Authorization: Bearer tokenGenerated'
+```
+
 
 + **POST** `localhost:8080/users`  - Returns the ID of the newly created user
 + **GET**  `localhost:8080/users/{id}` - Returns User information for the id provided. Accepts the Header "Accept=application/json" and "Accept=application/xml"
