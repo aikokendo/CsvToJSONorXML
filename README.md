@@ -19,8 +19,12 @@ in case of needing a more complex container with docker-compose, please refer to
 
 ## Endpoints
 ### OUATH2 Token
-+ **POST** `localhost:8080/oauth/token` with oauth authorization for the client (in this case hardcoded gateway/secret) and body parameters username, password and grant_type (for testing: admin, admin1, password respectively)
++ **POST** `localhost:8080/oauth/token` Returns an oauth token for the user. 
+ 
+ Requires: oauth authorization for the client (in this case hardcoded gateway/secret) and body parameters username, password and grant_type (for testing: admin, admin1, password respectively)
++ **POST** `localhost:8080/oauth/token` Returns a refreshed oauth token for the user. 
 
+Requires: oauth authorization for the client (in this case hardcoded gateway/secret) and body parameters refresh_token and grant_type (for testing: user_refresh_token, refresh_token respectively)
 ### USER
 
 {"firstName":"Ale","lastName":"Meraz"}
