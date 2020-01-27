@@ -26,7 +26,7 @@ public class UserController {
 
     @PostMapping
     @ResponseBody
-    @PreAuthorize("hasRole('ADMIN_ROLE')")  //verify user has admin role to run this
+//    @PreAuthorize("hasRole('ADMIN_ROLE')")  //verify user has admin role to run this
     public String addNewUser(@Valid @RequestBody User user, BindingResult myBR) throws Exception{
         if (!myBR.hasErrors()) {
             return userService.createUser(user);

@@ -1,5 +1,6 @@
 package aleUsers.configuration;
 
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
@@ -24,6 +25,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Autowired
     private ClientDetailsService clientService;
 
+    @Autowired
+    private UserDetailsService userDetailsService;
+
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
@@ -46,6 +50,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         DefaultOAuth2RequestFactory defaultOAuth2RequestFactory = new DefaultOAuth2RequestFactory(clientService);
         defaultOAuth2RequestFactory.setCheckUserScopes(true);
         endpoints.authenticationManager(authenticationManager)
+                .userDetailsService(userDetailsService)
                 .requestFactory(defaultOAuth2RequestFactory);
     }
 

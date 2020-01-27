@@ -12,8 +12,12 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration
 @EnableWebSecurity
@@ -36,7 +40,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().withUser("nakis").password(encoder.encode("fer")).roles(adminRole);
     }
 
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         //first lets allow rest requests to login with basic auth.
@@ -54,6 +57,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // if we want to limit access based on role, we can do it here.
         // for example here we are limiting /users/* to only users with role "ADMIN"
         // but only for POST methods, other requests have normal access.
+//        http.sessionManagement()
+//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         //allowing the OAuth2 token endpoint to be accessed with no authentication
         http.authorizeRequests()
@@ -68,6 +73,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
+    }
+
+    //we need to expose the userDetailService to let refresh_token work because it needs to check the user is still active
+    @Bean
+    @Override
+    public UserDetailsService userDetailsServiceBean() throws Exception {
+        return super.userDetailsServiceBean();
     }
 
 
