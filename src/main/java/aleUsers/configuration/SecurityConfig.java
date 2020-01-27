@@ -1,8 +1,11 @@
 package aleUsers.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -25,10 +28,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //we need an encoder for spring security 5
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         auth.inMemoryAuthentication()
-                .withUser("admin").password(encoder.encode("admin")).roles(userRole, adminRole)
+                .withUser("admin").password(encoder.encode("admin1")).roles(userRole, adminRole)
                 .and().withUser("simpleUser").password(encoder.encode("pass")).roles(userRole)
                 .and().withUser("nakis").password(encoder.encode("fer")).roles(adminRole);
     }
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -47,8 +51,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // if we want to limit access based on role, we can do it here.
         // for example here we are limiting /users/* to only users with role "ADMIN"
         // but only for POST methods, other requests have normal access.
+
+        //allowing the OAuth2 token endpoint to be accessed with no authentication
         http.authorizeRequests()
+                .antMatchers("/oauth/**").permitAll()
                 .antMatchers(HttpMethod.POST,"/users/**").hasRole(adminRole)
                 .anyRequest().authenticated();
     }
+
+
+    //Oauth grant_type "password" is disabled by default. In order to activate it we need to inject a AuthManager
+    @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
+    @Override
+    public AuthenticationManager authenticationManagerBean() throws Exception {
+        return super.authenticationManagerBean();
+    }
+
+
+
 }
