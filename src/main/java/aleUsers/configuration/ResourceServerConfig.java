@@ -15,6 +15,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @Configuration
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
+    //we need to use the same store to decode our tokens!
     @Autowired
     TokenStore tokenStore;
 
@@ -24,7 +25,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     }
 
     @Bean
-    @Primary
+    @Primary  //we need this annotation to give it higher preference,
+    // since apparently there is a default bean with this type already
+    //and we need this bad boy to have the jwt token store on it.
     public DefaultTokenServices tokenServices() {
         DefaultTokenServices defaultTokenServices = new DefaultTokenServices();
         defaultTokenServices.setTokenStore(tokenStore);

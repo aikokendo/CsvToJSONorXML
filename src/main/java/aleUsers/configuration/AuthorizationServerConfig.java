@@ -1,5 +1,6 @@
 package aleUsers.configuration;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
@@ -31,6 +32,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     @Autowired
     private UserDetailsService userDetailsService;
+
+    @Value("${jwt.secretKey}")
+    private String jwtSecret;
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
@@ -64,8 +68,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Bean
     public JwtAccessTokenConverter accessTokenConverter(){
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-        converter.setVerifierKey("123");
-        converter.setSigningKey("123");
+        converter.setVerifierKey(jwtSecret);
+        converter.setSigningKey(jwtSecret);
         return converter;
     }
 
