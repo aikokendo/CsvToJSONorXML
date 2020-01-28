@@ -1,5 +1,6 @@
 package aleUsers.configuration;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -13,6 +14,9 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory;
+import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 
 @Configuration
@@ -51,7 +55,24 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         defaultOAuth2RequestFactory.setCheckUserScopes(true);
         endpoints.authenticationManager(authenticationManager)
                 .userDetailsService(userDetailsService)
+                .tokenStore(tokenStore())
+                .accessTokenConverter(accessTokenConverter())
                 .requestFactory(defaultOAuth2RequestFactory);
+    }
+
+    //in order to use JWT first we need to define a converter with a signing key.
+    @Bean
+    public JwtAccessTokenConverter accessTokenConverter(){
+        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+        converter.setVerifierKey("123");
+        converter.setSigningKey("123");
+        return converter;
+    }
+
+    //then we need a token store that uses that converter to create tokens
+    @Bean
+    public TokenStore tokenStore(){
+        return new JwtTokenStore(accessTokenConverter());
     }
 
     }

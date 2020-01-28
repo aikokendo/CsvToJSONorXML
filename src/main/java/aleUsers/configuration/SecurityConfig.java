@@ -47,19 +47,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.httpBasic();
 
         // then we are disabling csrf, because I'm using basic auth for now.
-        // this is not ideal outside of demos, as it makes the app unsecured.
+        // this is not ideal usually, as it makes the app unsecured.
+        // but our tokens will protect us
         http.csrf().disable();
 
         //simple login and access pages provided by spring. can be accessed at /login and /logout.
         // I'm exposing them since it helps with debugging.
         http.formLogin().permitAll().and().logout().permitAll();
 
+        // we dont want the session created for security purposes as we are using tokens for each request.
+        http.sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
         // if we want to limit access based on role, we can do it here.
         // for example here we are limiting /users/* to only users with role "ADMIN"
         // but only for POST methods, other requests have normal access.
-//        http.sessionManagement()
-//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
         //allowing the OAuth2 token endpoint to be accessed with no authentication
         http.authorizeRequests()
                 .antMatchers("/oauth/**").permitAll()
