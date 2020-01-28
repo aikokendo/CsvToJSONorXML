@@ -40,7 +40,12 @@ public class UserController {
     @ResponseBody
     public User getUser(@PathVariable("id") int id) {
         Optional<User> optionalUser = userService.getUser(id);
-        return optionalUser.get();
+        if (optionalUser.isPresent()) {
+            return optionalUser.get();
+        }
+        else{
+            return null;
+        }
     }
 
     @GetMapping(value="/parse/{id}")

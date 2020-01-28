@@ -9,8 +9,8 @@ public class ParserINSERT implements Parser {
     public String parseFromCsv(String csvContent) {
         String[] csvFileLines = csvContent.split("\n");
         String output = "";
-        String[] headers = null;
-        String[] curRow = null;
+        String[] headers = new String[1];
+        String[] curRow;
         String curInsert = "";
         if (csvFileLines.length > 1){  //there is at least 1 row available
             headers = csvFileLines[0].split(",");

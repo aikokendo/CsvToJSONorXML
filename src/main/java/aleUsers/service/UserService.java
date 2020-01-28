@@ -47,8 +47,13 @@ public class UserService {
     @Cacheable(cacheNames = "userCSV")
     public String getCSVUser(int id){
         Optional<User> optionalUser = getUser(id);
-        User user = optionalUser.get();
-        return user.toCSVHeader() + '\n' + user.toCSVBody();
+        if (optionalUser.isPresent()) {
+            User user = optionalUser.get();
+            return user.toCSVHeader() + '\n' + user.toCSVBody();
+        }
+        else{
+            return "user not found";
+        }
     }
 
     @Cacheable(cacheNames = "usersCSV")
