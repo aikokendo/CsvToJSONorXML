@@ -2,47 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/aleusers/converter/UserConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aleusers/model/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/AppTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/converter/UserConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/model/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/configuration/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/configuration/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/configuration/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/configuration/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/configuration/appConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/configuration/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/consumer/RabbitReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/consumer/RabbitReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/controller/ParserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/controller/ParserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/errorHandling/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/errorhandling/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserINSERT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserPIPE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/ParserXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/QueueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/QueueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/StrategyFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/StrategyFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleUsers/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/app.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/configuration/AuthorizationServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/configuration/AuthorizationServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/configuration/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/configuration/ResourceServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/configuration/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/configuration/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/configuration/appConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/configuration/appConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/consumer/RabbitReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/consumer/RabbitReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/controller/parserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/controller/parserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/errorHandling/badRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/errorHandling/badRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/QueueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/QueueService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/StrategyFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/StrategyFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserINSERT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserINSERT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserJSON.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserPIPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserPIPE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserXML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,12 +15,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -67,13 +35,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="aleusers.model" />
+      <recent name="aleusers.converter" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -100,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserConverterTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aleusers.App" />
       <module name="ale2" />
@@ -109,9 +86,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ale2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aleusers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aleusers" />
+      <option name="MAIN_CLASS_NAME" value="aleusers.AppTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ale2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ale2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aleusers.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aleusers.converter" />
+      <option name="MAIN_CLASS_NAME" value="aleusers.converter.UserConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ale2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aleusers.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aleusers.model" />
+      <option name="MAIN_CLASS_NAME" value="aleusers.model.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.app" />
+        <item itemvalue="JUnit.UserConverterTest" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.AppTests (1)" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.AppTests" />
       </list>
     </recent_temporary>
   </component>
@@ -140,5 +175,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ale2$UserConverterTest.ic" NAME="UserConverterTest Coverage Results" MODIFIED="1580273585327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>aleusers.converter.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ale2$App.ic" NAME="App Coverage Results" MODIFIED="1580263716970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ale2$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1580273510333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>aleusers.model.*</FILTER>
+    </SUITE>
   </component>
 </project>
