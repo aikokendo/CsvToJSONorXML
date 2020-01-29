@@ -1,4 +1,4 @@
-package aleUsers.configuration;
+package aleusers.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

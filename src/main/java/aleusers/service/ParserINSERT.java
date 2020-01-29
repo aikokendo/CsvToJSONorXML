@@ -1,4 +1,4 @@
-package aleUsers.service;
+package aleusers.service;
 
 import org.springframework.stereotype.Component;
 
@@ -8,27 +8,33 @@ public class ParserINSERT implements Parser {
     @Override
     public String parseFromCsv(String csvContent) {
         String[] csvFileLines = csvContent.split("\n");
-        String output = "";
         String[] headers = new String[1];
         String[] curRow;
-        String curInsert = "";
+        StringBuilder bld = new StringBuilder();
+        StringBuilder outputBld = new StringBuilder();
         if (csvFileLines.length > 1){  //there is at least 1 row available
             headers = csvFileLines[0].split(",");
         }
         for (int i = 1; i<csvFileLines.length; i++){
             curRow = csvFileLines[i].split(",");
-            curInsert = "INSERT INTO TABLE (";
+            bld.append("INSERT INTO TABLE (");
             for (int j = 0; j < headers.length; j++){
-                curInsert += headers[j] + ",";
+                bld.append(headers[j]);
+                bld.append(",");
             }
-            curInsert = curInsert.substring(0, curInsert.length() - 1) + ") VALUES ("; //delete last comma
+            bld.deleteCharAt(bld.length()-1); //delete last comma
+            bld.append(") VALUES (");
 
             for (int j = 0; j < curRow.length; j++){
-                curInsert += curRow[j] + ",";
+                bld.append(curRow[j]);
+                bld.append(",");
             }
-            curInsert = curInsert.substring(0, curInsert.length() - 1) + ");"; //delete last comma
-            output += curInsert  + "\n";
+            bld.deleteCharAt(bld.length()-1); //delete last comma
+            bld.append(");");
+            outputBld.append(bld.toString());
+            bld.setLength(0);
+            outputBld.append("\n");
         }
-        return output;
+        return outputBld.toString();
     }
 }

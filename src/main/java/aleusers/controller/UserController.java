@@ -1,9 +1,11 @@
-package aleUsers.controller;
+package aleusers.controller;
 
-import aleUsers.errorHandling.BadRequestException;
-import aleUsers.model.User;
-import aleUsers.service.StrategyFinder;
-import aleUsers.service.UserService;
+import aleusers.converter.UserConverter;
+import aleusers.errorhandling.BadRequestException;
+import aleusers.model.User;
+import aleusers.model.UserDTO;
+import aleusers.service.StrategyFinder;
+import aleusers.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -19,17 +21,18 @@ import java.util.Optional;
 public class UserController {
     @Autowired
     private UserService userService;
-
     @Autowired
     private StrategyFinder myStrategy;
+    @Autowired
+    private UserConverter userConverter;
 
 
     @PostMapping
     @ResponseBody
     @PreAuthorize("hasRole('ADMIN_ROLE')")  //verify user has admin role to run this
-    public String addNewUser(@Valid @RequestBody User user, BindingResult myBR) throws Exception{
+    public String addNewUser(@Valid @RequestBody UserDTO user, BindingResult myBR){
         if (!myBR.hasErrors()) {
-            return userService.createUser(user);
+            return userService.createUser(userConverter.convertToEntity(user));
         }
         else{
             throw new BadRequestException("User provided is not correctly defined.");
@@ -52,7 +55,6 @@ public class UserController {
     @ResponseBody
     public String getParsedUser(@PathVariable("id") int id, @RequestParam(required = false) Map<String,String> query){
         if (!query.containsKey("type")){
-            //            return "text error error";
             throw new BadRequestException("A type must be provided");
         }
         else{
@@ -70,7 +72,6 @@ public class UserController {
     @ResponseBody
     public String getParsedUsers(@RequestParam(required = false) Map<String,String> query){
         if (!query.containsKey("type")){
-            //            return "text error error";
             throw new BadRequestException("A type must be provided.");
         }
         else{

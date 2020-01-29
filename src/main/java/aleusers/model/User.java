@@ -1,4 +1,4 @@
-package aleUsers.model;
+package aleusers.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -18,6 +18,8 @@ public class User implements Serializable {
 
     @Column(name="last_name")
     private String lastName;
+
+    private static final String CSVHEADER = "'id','first_name','last_name'";
 
 
     public User() {
@@ -70,7 +72,7 @@ public class User implements Serializable {
     }
 
     public String toCSVHeader(){
-        return "id,first_name,last_name";
+        return CSVHEADER;
     }
 
     public String toCSVBody(){

@@ -1,7 +1,7 @@
-package aleUsers.consumer;
+package aleusers.consumer;
 
-import aleUsers.model.User;
-import aleUsers.repository.UserRepository;
+import aleusers.model.User;
+import aleusers.repository.UserRepository;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class RabbitReceiver {
 
 //will try several times to insert otherwise it goes to the DLQ
     @RabbitHandler
-    public void receive(User user) throws Exception {
+    public void receive(User user){
             userRepository.save(user);
     }
 }

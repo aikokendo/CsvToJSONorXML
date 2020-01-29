@@ -1,11 +1,10 @@
-package aleUsers.service;
+package aleusers.service;
 
-import aleUsers.model.User;
-import aleUsers.repository.UserRepository;
+import aleusers.model.User;
+import aleusers.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +25,6 @@ public class UserService {
 
     @Cacheable(cacheNames = "user")
     public Optional<User> getUser(int id){
-        System.out.println("user is not cached: "+ id);
         if (userRepository.existsById(id)){
             return userRepository.findById(id);
         }
@@ -35,7 +33,7 @@ public class UserService {
 
     @CacheEvict(cacheNames = {"user","users","userCSV","usersCSV"}, allEntries = true)
     public String createUser(User user){
-        queueService.addToQueue(primaryQueueName, user);;
+        queueService.addToQueue(primaryQueueName, user);
         return "Success";
     }
 
@@ -60,12 +58,13 @@ public class UserService {
     public String getCSVUsers(){
         Iterable<User> allUsers = getAllUsers();
         String outputHead = "";
-        String outputBody = "";
+        StringBuilder bld = new StringBuilder();
         for (User user: allUsers){
             outputHead = user.toCSVHeader() + "\n";
-            outputBody += user.toCSVBody() + "\n";
+            bld.append(user.toCSVBody());
+            bld.append("\n");
         }
-        return outputHead + outputBody;
+        return outputHead + bld.toString();
     }
 
 }

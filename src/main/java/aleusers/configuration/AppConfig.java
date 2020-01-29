@@ -1,4 +1,4 @@
-package aleUsers.configuration;
+package aleusers.configuration;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-public class appConfig {
+public class AppConfig {
 
     @Value("${primaryQueue.name}")
     private String primaryQueueName;
@@ -19,7 +19,7 @@ public class appConfig {
 
     @Bean
     public Queue mainQueue() {
-        Map<String, Object> args = new HashMap<String, Object>();
+        Map<String, Object> args = new HashMap<>();
         // The default exchange
         args.put("x-dead-letter-exchange", "");
         // Route to the incoming queue when the TTL occurs
@@ -31,5 +31,6 @@ public class appConfig {
     public Queue deadLetterQueue() {
         return new Queue(deadLetterQueueName);
     }
+
 }
 

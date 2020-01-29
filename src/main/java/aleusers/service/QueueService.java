@@ -1,4 +1,4 @@
-package aleUsers.service;
+package aleusers.service;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

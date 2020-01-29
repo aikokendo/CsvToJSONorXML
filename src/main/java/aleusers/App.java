@@ -1,4 +1,4 @@
-package aleUsers;
+package aleusers;
 
 
 import org.springframework.boot.SpringApplication;
@@ -8,9 +8,9 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @EnableCaching
-public class app {
+public class App {
     public static void main(String[] args){
-        SpringApplication.run(app.class, args);
+        SpringApplication.run(App.class, args);
     }
 
 }
