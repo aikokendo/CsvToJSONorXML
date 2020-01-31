@@ -2,12 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714aec81-f1fc-4e6c-8d69-317d7859d79b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/AppTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/converter/UserConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/model/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/consumer/RabbitReceiverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/controller/OAuthHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/controller/ParserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/service/ParserINSERTTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/service/ParserJSONTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/service/ParserPIPETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/service/ParserXMLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/service/QueueServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/service/StrategyFinderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aleusers/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aleusers/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aleusers/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aleusers/model/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/model/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserINSERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserINSERT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserPIPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/ParserPIPE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aleusers/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleusers/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aleusers/AppTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aleusers/converter/UserConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aleusers/converter/UserConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aleusers/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aleusers/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ale2-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ale2-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ale2-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ale2-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/model/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/model/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserINSERT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserINSERT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aleUsers/service/parserPIPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aleUsers/service/parserPIPE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-aleusers.AppTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-aleusers.converter.UserConverterTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-aleusers.converter.UserConverterTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-aleusers.model.UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-aleusers.model.UserTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/aleusers.AppTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/aleusers.converter.UserConverterTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/aleusers.converter.UserConverterTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/aleusers.model.UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/aleusers.model.UserTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/aleusers/AppTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/aleusers/converter/UserConverterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/aleusers/converter/UserConverterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/aleusers/model/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/aleusers/model/UserTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +53,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="241" />
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myElementSize" value="361" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,6 +69,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="UserServiceTest" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProjectId" id="1W5NZG4dJZ2F3jyHG2zazYY7ATm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -44,6 +87,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="aleusers.service" />
+      <recent name="aleusers.consumer" />
+      <recent name="aleusers.controller" />
       <recent name="aleusers.model" />
       <recent name="aleusers.converter" />
     </key>
@@ -54,6 +100,7 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aleusers.controller" />
       <recent name="parser.controller" />
       <recent name="parser" />
     </key>
@@ -77,16 +124,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserConverterTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aleusers.App" />
+  <component name="RunManager" selected="JUnit.aleusers in ale2">
+    <configuration name="ParserINSERTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ale2" />
-      <option name="PROGRAM_PARAMETERS" value="xxx PIPE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aleusers.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aleusers.service" />
+      <option name="MAIN_CLASS_NAME" value="aleusers.service.ParserINSERTTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StrategyFinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ale2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aleusers.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aleusers.service" />
+      <option name="MAIN_CLASS_NAME" value="aleusers.service.StrategyFinderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ale2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aleusers.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aleusers.service" />
+      <option name="MAIN_CLASS_NAME" value="aleusers.service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.getCsvUsersShouldReturnCSVFormatOfAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ale2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aleusers.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aleusers.service" />
+      <option name="MAIN_CLASS_NAME" value="aleusers.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="getCsvUsersShouldReturnCSVFormatOfAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aleusers in ale2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ale2" />
       <extension name="coverage">
         <pattern>
@@ -95,58 +195,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="aleusers" />
-      <option name="MAIN_CLASS_NAME" value="aleusers.AppTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ale2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AppTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ale2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aleusers.converter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="aleusers.converter" />
-      <option name="MAIN_CLASS_NAME" value="aleusers.converter.UserConverterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ale2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aleusers.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="aleusers.model" />
-      <option name="MAIN_CLASS_NAME" value="aleusers.model.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserConverterTest" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.AppTests (1)" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.AppTests" />
+        <item itemvalue="JUnit.aleusers in ale2" />
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.getCsvUsersShouldReturnCSVFormatOfAllUsers" />
+        <item itemvalue="JUnit.ParserINSERTTest" />
+        <item itemvalue="JUnit.StrategyFinderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,12 +237,25 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ale2$UserConverterTest.ic" NAME="UserConverterTest Coverage Results" MODIFIED="1580273585327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ale2$AppTests__1_.ic" NAME="AppTests (1) Coverage Results" MODIFIED="1580334677644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>aleusers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ale2$aleusers_in_ale2.ic" NAME="aleusers in ale2 Coverage Results" MODIFIED="1580431269747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>aleusers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ale2$UserConverterTest.ic" NAME="UserConverterTest Coverage Results" MODIFIED="1580334194518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>aleusers.converter.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ale2$App.ic" NAME="App Coverage Results" MODIFIED="1580263716970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/ale2$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1580273510333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ale2$UserControllerTest.ic" NAME="UserControllerTest Coverage Results" MODIFIED="1580411571749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>aleusers.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ale2$ParserControllerTest.ic" NAME="ParserControllerTest Coverage Results" MODIFIED="1580391595765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>aleusers.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ale2$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1580334272226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>aleusers.model.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/ale2$All_in_ale2.ic" NAME="All in ale2 Coverage Results" MODIFIED="1580412692437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

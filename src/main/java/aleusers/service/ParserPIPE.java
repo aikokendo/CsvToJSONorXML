@@ -24,6 +24,8 @@ public class ParserPIPE implements Parser {
             bld.setLength(0);
             outputBld.append("\n");
         }
+
+        outputBld.deleteCharAt(outputBld.length()-1); //delete last skip of line
         return outputBld.toString();
     }
 }

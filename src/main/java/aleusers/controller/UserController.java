@@ -9,7 +9,6 @@ import aleusers.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -30,13 +29,8 @@ public class UserController {
     @PostMapping
     @ResponseBody
     @PreAuthorize("hasRole('ADMIN_ROLE')")  //verify user has admin role to run this
-    public String addNewUser(@Valid @RequestBody UserDTO user, BindingResult myBR){
-        if (!myBR.hasErrors()) {
-            return userService.createUser(userConverter.convertToEntity(user));
-        }
-        else{
-            throw new BadRequestException("User provided is not correctly defined.");
-        }
+    public String addNewUser(@Valid @RequestBody UserDTO user){
+        return userService.createUser(userConverter.convertToEntity(user));
     }
 
     @GetMapping(value="{id}")

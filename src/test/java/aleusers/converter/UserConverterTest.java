@@ -11,7 +11,7 @@ public class UserConverterTest {
     private UserConverter userConverter = new UserConverter();
 
     @Test
-    public void convertToDto() {
+    public void convertToDtoShouldConvertUserToUserDto() {
         User user = new User();
         user.setId(1);
         user.setFirstName("first_name");
@@ -24,7 +24,7 @@ public class UserConverterTest {
     }
 
     @Test
-    public void convertToEntity() {
+    public void convertToEntityShouldConvertUserDtoToUser() {
         UserDTO userDTO = new UserDTO();
         userDTO.setId(1);
         userDTO.setFirstName("first_name");

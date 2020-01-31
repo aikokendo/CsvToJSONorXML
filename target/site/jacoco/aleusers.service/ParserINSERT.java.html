@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ParserINSERT.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ale2</a> &gt; <a href="index.source.html" class="el_package">aleusers.service</a> &gt; <span class="el_source">ParserINSERT.java</span></div><h1>ParserINSERT.java</h1><pre class="source lang-java linenums">package aleusers.service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+<span class="fc" id="L6">public class ParserINSERT implements Parser {</span>
+
+    @Override
+    public String parseFromCsv(String csvContent) {
+<span class="fc" id="L10">        String[] csvFileLines = csvContent.split(&quot;\n&quot;);</span>
+        String[] headers;
+        String[] curRow;
+<span class="fc" id="L13">        StringBuilder bld = new StringBuilder();</span>
+<span class="fc" id="L14">        StringBuilder outputBld = new StringBuilder();</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        if (csvFileLines.length &gt; 1) {  //there is at least 1 row available</span>
+<span class="fc" id="L16">            headers = csvFileLines[0].split(&quot;,&quot;);</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">            for (int i = 1; i &lt; csvFileLines.length; i++) {</span>
+<span class="fc" id="L18">                curRow = csvFileLines[i].split(&quot;,&quot;);</span>
+<span class="fc" id="L19">                bld.append(&quot;INSERT INTO TABLE (&quot;);</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">                for (int j = 0; j &lt; headers.length; j++) {</span>
+<span class="fc" id="L21">                    bld.append(headers[j]);</span>
+<span class="fc" id="L22">                    bld.append(&quot;,&quot;);</span>
+                }
+<span class="fc" id="L24">                bld.deleteCharAt(bld.length() - 1); //delete last comma</span>
+<span class="fc" id="L25">                bld.append(&quot;) VALUES (&quot;);</span>
+
+<span class="fc bfc" id="L27" title="All 2 branches covered.">                for (int j = 0; j &lt; curRow.length; j++) {</span>
+<span class="fc" id="L28">                    bld.append(curRow[j]);</span>
+<span class="fc" id="L29">                    bld.append(&quot;,&quot;);</span>
+                }
+<span class="fc" id="L31">                bld.deleteCharAt(bld.length() - 1); //delete last comma</span>
+<span class="fc" id="L32">                bld.append(&quot;);&quot;);</span>
+<span class="fc" id="L33">                outputBld.append(bld.toString());</span>
+<span class="fc" id="L34">                bld.setLength(0);</span>
+<span class="fc" id="L35">                outputBld.append(&quot;\n&quot;);</span>
+            }
+<span class="fc" id="L37">            outputBld.deleteCharAt(outputBld.length() - 1); //delete last skip of line</span>
+<span class="fc" id="L38">            return outputBld.toString();</span>
+        }
+<span class="fc" id="L40">        return &quot;&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

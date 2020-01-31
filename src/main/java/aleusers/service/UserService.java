@@ -18,9 +18,8 @@ public class UserService {
     @Autowired
     private QueueService queueService;
 
-
     @Value("${primaryQueue.name}")
-    private String primaryQueueName;
+    protected String primaryQueueName;
 
 
     @Cacheable(cacheNames = "user")
@@ -63,6 +62,9 @@ public class UserService {
             outputHead = user.toCSVHeader() + "\n";
             bld.append(user.toCSVBody());
             bld.append("\n");
+        }
+        if (bld.length() > 0) {
+            bld.deleteCharAt(bld.length() - 1); //delete last skip of line
         }
         return outputHead + bld.toString();
     }

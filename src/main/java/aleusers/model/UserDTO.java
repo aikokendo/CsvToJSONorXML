@@ -1,6 +1,9 @@
 package aleusers.model;
 
+import javax.validation.constraints.NotNull;
+
 public class UserDTO {
+    @NotNull
     private String firstName;
     private String lastName;
     private int id;

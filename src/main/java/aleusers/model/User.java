@@ -19,7 +19,7 @@ public class User implements Serializable {
     @Column(name="last_name")
     private String lastName;
 
-    private static final String CSVHEADER = "'id','first_name','last_name'";
+    protected static final String CSVHEADER = "'id','first_name','last_name'";
 
 
     public User() {
@@ -61,14 +61,6 @@ public class User implements Serializable {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
-    }
-
-    public String toSqlInsert(){
-        return "INSERT INTO users (id,first_name,last_name) VALUES(" + getId() + ",'" + getFirstName() + "','" + getLastName() + "');";
-    }
-
-    public String toPipe(){
-        return getId() + "|" + getFirstName() + "|" + getLastName();
     }
 
     public String toCSVHeader(){

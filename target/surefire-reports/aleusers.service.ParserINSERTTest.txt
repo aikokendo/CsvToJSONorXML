@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: aleusers.AppTests
+Test set: aleusers.service.ParserINSERTTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in aleusers.AppTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in aleusers.service.ParserINSERTTest

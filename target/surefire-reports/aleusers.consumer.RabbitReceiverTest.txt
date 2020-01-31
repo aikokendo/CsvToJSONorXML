@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: aleusers.consumer.RabbitReceiverTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.369 s - in aleusers.consumer.RabbitReceiverTest

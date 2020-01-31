@@ -1,3 +1,15 @@
+aleusers\service\ParserXMLTest.class
+aleusers\service\UserServiceTest$1.class
+aleusers\service\ParserINSERTTest.class
+aleusers\service\ParserPIPETest.class
+aleusers\service\StrategyFinderTest.class
+aleusers\consumer\RabbitReceiverTest.class
+aleusers\controller\ParserControllerTest.class
 aleusers\converter\UserConverterTest.class
-aleusers\AppTests.class
+aleusers\controller\OAuthHelper.class
+aleusers\service\QueueServiceTest.class
 aleusers\model\UserTest.class
+aleusers\service\UserServiceTest.class
+aleusers\controller\UserControllerTest.class
+aleusers\service\ParserJSONTest.class
+aleusers\service\UserServiceTest$2.class
