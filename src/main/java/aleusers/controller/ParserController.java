@@ -13,7 +13,7 @@ public class ParserController {
     @Autowired
     private StrategyFinder myStrategy;
 
-    @GetMapping()
+    @PostMapping()
     public String getParser(@RequestParam(required = false) Map<String,String> query, @RequestBody(required = false) String csvText){
         if (csvText == null || !query.containsKey("type")){
             throw new BadRequestException("A type must be provided.");

@@ -1,6 +1,0 @@
-projectKey=testale2:ale2
-serverUrl=http://localhost:9000
-serverVersion=8.1.0.31237
-dashboardUrl=http://localhost:9000/dashboard?id=testale2%3Aale2
-ceTaskId=AW_5Dqm7iwnGbPifm6LU
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AW_5Dqm7iwnGbPifm6LU
